@@ -10,7 +10,6 @@ function App() {
   const [tempMax, setTempMax] = useState("");
   const [humidity, setHumidity] = useState("");
   const [icon, setIcon] = useState("");
-  const [weatherImg, setWeatherImg] = useState("");
 
   const handleSubmit = (e) => {
 
@@ -33,7 +32,7 @@ function App() {
         setTempMax(data.main.temp_max);
         setHumidity(data.main.humidity);
         setIcon(data.weather[0].icon);
-        setWeatherImg("http://openweathermap.org/img/wn/" + icon + "@2x.png");
+        
       });
 
   }
@@ -51,11 +50,11 @@ function App() {
         <div>
           <div className="results">
             <h3>Weather in: {name}</h3>
-            <img src={weatherImg} alt="Weather Pic" />
+            <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="Weather Pic" />
           </div>
           <div className="details">
-            <h4>Temperature: {temp}</h4>
-            <p>{description}</p>
+            <h4>Temperature: {temp}° Celcius</h4>
+            <p>Weather description: {description}</p>
             <p>Low: {tempMin}</p>
             <p>High: {tempMax}</p>
             <p>Humidity: {humidity}</p>
