@@ -14,6 +14,10 @@ body {
   width: 30%;
 }
 
+form {
+  margin-bottom: 20px;
+}
+
 .location {
   height: 2.5em;
   width: 12em;
@@ -28,4 +32,9 @@ body {
   border-radius: 15px;
   margin-left: 5px;
   cursor: pointer;
+}
+
+hr {
+  width: 85%;
+  border: 1px solid black;
 }
