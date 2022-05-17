@@ -4,9 +4,10 @@ body {
 }
 
 .App {
-  background:rgba(121, 120, 120, 0.8);
-  border: solid 1px black;
+  background:rgba(5, 5, 5, 0.8);
+  border: solid 1px white;
   border-radius: 15px;
+  color: white;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -20,6 +21,8 @@ form {
 }
 
 .location {
+  background:rgba(117, 111, 111, 0.6);
+  color: white;
   height: 2.5em;
   width: 12em;
   font-size: 1em;
@@ -37,7 +40,7 @@ form {
 
 hr {
   width: 85%;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 .results h3 {

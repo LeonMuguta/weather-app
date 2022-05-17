@@ -24,7 +24,6 @@ function App() {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        console.log(data);
         setName(data.name)
         setDescription(data.weather[0].description);
         setTemp(data.main.temp);
@@ -32,7 +31,6 @@ function App() {
         setTempMax(data.main.temp_max);
         setHumidity(data.main.humidity);
         setIcon(data.weather[0].icon);
-        
       });
 
   }
@@ -45,6 +43,7 @@ function App() {
         <button className="search" type="submit">Search</button>
       </form>
       <hr />
+      
       {
         name !== "" &&
         <div>
